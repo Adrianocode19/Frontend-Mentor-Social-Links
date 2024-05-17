@@ -1,0 +1,100 @@
+@font-face {
+    font-family: Inter-bold;
+    src: url(assets/fonts/static/Inter-Bold.ttf);
+}
+
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(assets/fonts/static/Inter-SemiBold.ttf);
+}
+
+:root {
+    --back: #141414;
+    --container-background: #1F1F1F;
+    --letter-name-link-color: rgb(222, 222, 222);
+    --letter-country-color: rgb(102, 199, 4);
+    --letter-profession-color: #707070;
+    --link-background-color: #333333;
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--back);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    background: var(--container-background);
+    border-radius: 15px;
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container img {
+    margin-bottom: 20px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
+.name {
+    margin-bottom: 5px;
+    font-family: 'Inter-Bold';
+    color: var(--letter-name-link-color);
+    font-size: 28px;
+}
+
+.country {
+    font-family: 'Inter-SemiBold';
+    color: var(--letter-country-color);
+    font-size: 18px;
+}
+
+.profession {
+    font-family: 'Inter-Bold';
+    color: var(--letter-profession-color);
+    margin: 20px 0;
+    font-size: 15px;
+}
+
+.container_links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 18em;
+    gap: 15px;
+}
+
+.link {
+    font-family: 'Inter-SemiBold';
+    background: var(--link-background-color);
+    padding: 15px;
+    border-radius: 10px;
+    width: 100%;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+.link:hover {
+    background: #525252;
+}
+
+.link a {
+    color: var(--letter-name-link-color);
+    text-decoration: none;
+}
